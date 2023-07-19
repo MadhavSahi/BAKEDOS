@@ -1,0 +1,644 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  padding-left: 20px;
+  /* margin-left: 20px; */
+  background-color: #f5f5f5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.mid-text {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 40px;
+  color: #ff6666;
+  margin-left: 50px;
+  font-style: italic;
+  font-weight: 800;
+  font-family: "Noto Serif", serif;
+  /* font-family: 'Oswald', sans-serif; */
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 40px;
+  align-items: center;
+  margin-top: 20%;
+  margin-right: 40px;
+  /* margin-top: 10px; */
+}
+
+nav ul li {
+  font-style: italic;
+  margin-right: 0px;
+}
+
+nav ul li a {
+  color: #e03b8b;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  /* color: #333; */
+}
+a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+.down-icon {
+  font-size: 10px;
+  margin-left: 4px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 19px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #e03b8b;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  background-color: #ffd1dc;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.product-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.left {
+  font-style: italic;
+  font-size: 30px;
+  flex: 1;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 10px;
+  width: 100%;
+  /* height: auto; */
+  height: 300px;
+}
+.carousel-images {
+  display: flex;
+  gap:10px;
+  width: calc(100% * 3); /* Set the width to accommodate three images */
+  /* transition: transform 0.4s ease-in-out; */
+  /* width: 100%; */
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.carousel img {
+  /* width: 30%;
+  height: auto; */
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  flex: 0 0 calc(100% / 3); /* Set the size of each image */
+  height: auto;
+  /* transition: transform 0.3s ease-in-out;
+  transform: translateX(100%); */
+}
+
+/* .carousel img.current {
+  transform: translateX(0);
+} */
+
+.carousel-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.prev-button,
+.next-button {
+  font-size: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  transition: background-color 0.3s ease-in-out;
+}
+/* Add a separator line style */
+/* Add a separator line style */
+section:not(:last-of-type) {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+section:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* background-color: black; Change the color to your preference */
+}
+
+#info {
+  text-align: center;
+  margin-bottom: 40px;
+  /* font-style: italic; */
+}
+.instruction-header{
+  font-style: italic;
+  font-size: 60px;
+}
+.order-instructions {
+  max-width: 800px;
+  margin: 0 auto;
+  /* font-size: 30px; */
+}
+
+.order-instructions ol {
+  list-style-type:disc;
+  padding-left: 20px;
+}
+
+.order-instructions li {
+  font-size: 25px;
+  font-style: italic;
+  font-weight:500;
+  margin-bottom: 20px;
+}
+
+.order-instructions strong {
+  color: #FF6666;
+}
+.zomato{
+ color: #E33442;
+ font-weight: 600;
+}
+.swiggy{
+  color: #FF8702;
+  font-weight: 600;
+}
+.deliverydos,.deliverydos-1, .parties{
+  color: orangered;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  padding-left: 60px;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-style: italic;
+  /* font-weight: 1000; */
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.footer-fields:hover{
+  color: orangered;
+}
+.social-icons {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.footer-text {
+  color: #3b3636;
+  font-size: 14px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.prev-button:focus,
+.next-button:focus {
+  outline: none;
+}
+
+.prev-button {
+  margin-right: 10px;
+}
+
+.next-button {
+  margin-left: 10px;
+}
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+ .whatsapp-text{
+  color: orangered;
+  font-weight: 600;
+ }
+ .whatsapp-text:hover,.deliverydos:hover,.zomato:hover,.swiggy:hover{
+  text-decoration: underline;
+ }
+
+ /* @media only screen and (min-width: 601px) and (max-width: 900px) {
+  .mid-text {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  .carousel {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .mid-text {
+    font-size: 60px;
+    margin-top: 35px;
+    margin-left: 40px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+} */
+/* Mobile Phones (Portrait) */
+@media only screen and (max-width: 480px) {
+  .mid-text {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    gap:10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .product-section {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .left {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .right {
+    align-items: flex-start;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+
+  .carousel-images {
+    flex-wrap: nowrap;
+    width: calc(100% * 6);
+  }
+
+  .carousel img {
+    flex: 0 0 calc(100% / 2);
+  }
+
+  .carousel-controls {
+    margin-top: 5px;
+  }
+
+  .order-instructions li {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .instruction-header {
+    font-size: 40px;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Mobile Phones (Landscape) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .mid-text {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  .carousel {
+    height: 250px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    gap:10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .mid-text {
+    font-size: 60px;
+    margin-top: 35px;
+    margin-left: 40px;
+  }
+
+  main {
+    padding: 40px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    gap:10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+  .carousel {
+    height: 300px;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Small Desktops and Laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .mid-text {
+    font-size: 70px;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  main {
+    padding: 40px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    gap:10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Large Desktops and Laptops */
+@media only screen and (min-width: 1200px) {
+  .mid-text {
+    font-size: 80px;
+    margin-top: 45px;
+    margin-left: 60px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+  
+}
+
+/* iPhones */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .mid-text {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .product-section {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .left {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .right {
+    align-items: flex-start;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+
+  .carousel-images {
+    flex-wrap: nowrap;
+    width: calc(100% * 6);
+  }
+
+  .carousel img {
+    flex: 0 0 calc(100% / 2);
+  }
+
+  .carousel-controls {
+    margin-top: 5px;
+  }
+
+  .order-instructions li {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .instruction-header {
+    font-size: 40px;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* iPads */
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
+  .mid-text {
+    font-size: 60px;
+    margin-top: 35px;
+    margin-left: 40px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+}
+
+/* Other Tablets */
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+  .mid-text {
+    font-size: 70px;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+}
+
+/* Large Desktops and Laptops */
+@media only screen and (min-width: 1200px) {
+  .mid-text {
+    font-size: 80px;
+    margin-top: 45px;
+    margin-left: 60px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+}
