@@ -12,7 +12,9 @@ header {
   /* margin-left: 20px; */
   background-color: #f5f5f5;
 }
-
+.header-links:hover{
+  color:black;
+}
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -43,13 +45,16 @@ nav ul li {
   font-style: italic;
   margin-right: 0px;
 }
-
 nav ul li a {
   color: #e03b8b;
+  /* color: black; */
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
   /* color: #333; */
+}
+nav ul li a li{
+  color: cyan;
 }
 a:visited, a:active {
   color: inherit;
